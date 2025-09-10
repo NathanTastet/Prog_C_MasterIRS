@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Informations</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="td-1">TD 1</h1>
+<h1 id="informations">Informations</h1>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auteur</td>
+<td>Sebastien Gougeaud</td>
+</tr>
+<tr>
+<td>Mail</td>
+<td><a href="mailto:pro.seb.gougeaud@gmail.com">pro.seb.gougeaud@gmail.com</a></td>
+</tr>
+<tr>
+<td>Version</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>9 septembre 2025</td>
+</tr>
+</tbody>
+</table>
+<h1 id="préambule">Préambule</h1>
+<p>Le but de ce TD est de se familiariser avec la syntaxe du C, et de pouvoir
+compiler quelques programmes simples, autour des variables, des blocs de
+contrôle et des fonctions d'interaction avec l'utilisateur, <code>printf()</code> et
+<code>scanf()</code>.</p>
+<h1 id="exercices">Exercices</h1>
+<p>La suite d'exercices proposée permet revoir l'ensemble des notions vues en
+cours. Elles ne seront pas toutes corrigées lors de la séance. Pour certains
+exercices, un ensemble de tests unitaires peut être fourni afin de vous
+permettre de tester les programmes.</p>
+<h2 id="variables">Variables</h2>
+<ol>
+<li>Définition de plusieurs variables : une entière <code>a</code> qui vaut <code>12</code>, une
+flottante <code>d</code> qui vaut <code>3.14</code>, un caractère <code>c</code> qui vaut <code>i</code> et une chaîne
+de caractères <code>s</code> qui vaut <code>Hello world!</code>.</li>
+<li>Définition de trois variables entières <code>cote</code>, <code>perimetre</code> et <code>surface</code>,
+et affecter à <code>perimetre</code> et <code>surface</code> les valeurs des périmètre et surface
+d'un carré dont la mesure du côté vaut <code>cote</code>.</li>
+<li>Même exercice avec un rectangle, et les variables <code>longueur</code>, <code>largeur</code>,
+<code>perimetre</code> et <code>surface</code>.</li>
+<li>Même exercice avec un cercle, et les variables <code>rayon</code>, <code>perimetre</code> et
+<code>surface</code>.</li>
+<li>Soient deux caractères nommés <code>c_a</code>et <code>c_b</code>, changer leurs valeurs pour que
+<code>c_a</code> soit décalé de deux caractères vers la droite, et <code>c_b</code> de trois vers
+la gauche.</li>
+</ol>
+<h2 id="printfscanf"><code>printf()</code>/<code>scanf()</code></h2>
+<ol start="6">
+<li>
+<p>En reprenant l'exercice 1, écrire un appel à la fonction <code>printf()</code> pour
+afficher l'ensemble des variables définies.</p>
+</li>
+<li>
+<p>En reprenant les exercices 2 à 4, écrire un appel à la fonction <code>printf()</code>
+pour obtenir l'affichage suivant, par exemple pour l'exercice 2 :</p>
+<pre><code>Le carré de côté '4' a un périmètre de '16' et une surface de '16'.
+</code></pre>
+</li>
+<li>
+<p>Soit un flottant <code>f</code> valant <code>3.14</code>, afficher avec la fonction <code>printf()</code> sa
+représentation entière, simple précision et double précision.</p>
+</li>
+<li>
+<p>En utilisant la fonction <code>scanf()</code>, reprendre les exercices 2 et 3 pour que
+les variables <code>cote</code>, <code>longueur</code> et <code>largeur</code> soient récupérés du terminal.</p>
+</li>
+<li>
+<p>En utilisant la fonction <code>scanf()</code>, stocker dans une variable une chaîne de
+caractères. Essayer également de rentrer une chaîne contenant des espaces.</p>
+</li>
+</ol>
+<h2 id="condition-if">Condition <code>if</code></h2>
+<ol start="11">
+<li>Écrire un programme qui calcule la valeur absolue d'un entier <code>a</code>.</li>
+<li>Écrire un programme qui donne le signe d'un entier <code>a</code>, <code>1</code> si l'entier est
+positif, <code>-1</code> si l'entier est négatif et <code>0</code> sinon.</li>
+</ol>
+<h2 id="condition-switch">Condition <code>switch</code></h2>
+<ol start="13">
+<li>Écrire un programme qui indique si le caractère <code>c</code> est une voyelle ou une
+consonne.</li>
+<li>Écrire un programme qui donne le nombre de jours d'un mois <code>m</code> donné.</li>
+</ol>
+<h2 id="boucle">Boucle</h2>
+<ol start="15">
+<li>Écrire un programme qui calcule la somme des premiers entiers jusqu'à <code>n</code>
+compris.</li>
+<li>Écrire un programme qui calcule la factorielle de l'entier <code>n</code>.</li>
+<li>Écrire un programme qui vérifie si un entier <code>n</code> est premier.</li>
+<li>Écrire un programme qui calcule le PGCD de deux entiers <code>m</code> et <code>n</code>.</li>
+<li>Reprendre l'exercice 15 en utilisant les boucles <code>for</code>, <code>while</code> et
+<code>do while</code>.</li>
+<li>Écrire un programme qui donne le quotient et le reste de la division
+entière de <code>a</code> par <code>b</code> sans utiliser les opérateurs <code>/</code> et <code>%</code>.</li>
+</ol>
+
+            
+            
+        </body>
+        </html>

@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <ctype.h>
+
+
+int main(){
+    char c;
+    printf("Donnez un caractère : ");
+    scanf("%c",&c);
+    c = tolower(c);
+    
+    if( (c >= 'a') && (c <= 'z')){
+        switch(c){
+            case 'a' :
+            case 'e' :
+            case 'i' :
+            case 'o' :
+            case 'u' :
+                printf("Votre caractère est une voyelle.\n");
+                break;
+            default : 
+                printf("Votre caractère est une consonne \n");
+        
+        }
+    }
+    else{
+        printf("Vous n'avez pas entré de caractère valide.\n");
+    }
+    
+    int mois;
+    printf("Donnez un mois entre 1 et 12: ");
+    scanf(" %d",&mois);
+    
+    switch (mois) {
+        case 1 : case 3: case 5 : case 7 : case 8 : case 10 : case 12 : 
+            printf("Ce mois contient 31 jours !\n");
+            break;
+        case 2 :
+            printf("Février... Ce mois peut contenir 28 ou 29 jours, ca dépend de l'année\n");
+            break;
+        case 4 : case 6: case 9 : case 11 :
+            printf("Ce mois contient 30 jours !\n");
+            break;
+        default :
+            printf("Je ne connais pas ce mois !\n");
+    }
+}
