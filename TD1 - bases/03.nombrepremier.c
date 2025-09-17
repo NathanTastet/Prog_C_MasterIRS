@@ -23,6 +23,7 @@ int main(){
     else{
         printf("\nCe nombre n'est pas premier");
     }
+    printf("\n");
 }
 
 

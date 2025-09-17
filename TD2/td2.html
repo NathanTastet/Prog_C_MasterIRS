@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Informations</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="td-2">TD 2</h1>
+<h2 id="informations">Informations</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auteur</td>
+<td>Sebastien Gougeaud</td>
+</tr>
+<tr>
+<td>Mail</td>
+<td><a href="mailto:pro.seb.gougeaud@gmail.com">pro.seb.gougeaud@gmail.com</a></td>
+</tr>
+<tr>
+<td>Version</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>10 septembre 2025</td>
+</tr>
+</tbody>
+</table>
+<h2 id="préambule">Préambule</h2>
+<p>Le but de ce TD est de se familiariser avec la syntaxe du C, et de pouvoir
+compiler quelques programmes simples, autour des tableaux, des chaînes de
+caractères et des fonctions.</p>
+<h2 id="exercices">Exercices</h2>
+<p>La suite d'exercices proposée permet de revoir l'ensemble des notions vues en
+cours. Elles ne seront pas toutes corrigées lors de la séance. Pour certains
+exercices, un ensemble de tests unitaires peut être fourni afin de vous
+permettre de tester les programmes.</p>
+<h3 id="tableaux">Tableaux</h3>
+<p>On considère pour les exercices 1 à 9, un tableau d'entiers <code>tab</code> de taille
+<code>TAILLE</code>.</p>
+<ol>
+<li>Écrire un programme qui dénombre les nombres positifs et négatifs. On
+considère 0 comme étant un nombre positif.</li>
+<li>Écrire un programme qui calcule la somme du tableau.</li>
+<li>Écrire un programme qui calcule la moyenne du tableau.</li>
+<li>Écrire un programme qui récupère les valeurs minimales et maximales du
+tableau.</li>
+<li>Écrire un programme qui applique un coefficient entier <code>a</code> aux éléments
+du tableau.</li>
+<li>Écrire un programme qui décale tous les éléments du tableau d'une case
+vers la droite (vers la fin du tableau).</li>
+<li>Écrire un programme qui trie le tableau. L'algorithme est au choix de
+l'étudiant.</li>
+<li>Écrire un programme qui calcule la médiane du tableau.</li>
+<li>Écrire un programme qui dénombre les éléments du tableau. On considère que
+les éléments ne peuvent prendre des valeurs qu'entre 0 et 9.</li>
+<li>Écrire un programme qui calcule le produit scalaire de deux tableaux <code>tab1</code>
+et <code>tab2</code> de taille <code>TAILLE</code>.</li>
+</ol>
+<h3 id="chaînes-de-caractères">Chaînes de caractères</h3>
+<p>On considère pour les exercices 11 à 13, une chaîne de caractères <code>str</code> de
+taille <code>TAILLE</code>.</p>
+<ol start="11">
+<li>Écrire un programme qui compte le nombre de voyelles et de consonnes.</li>
+<li>Écrire un programme qui change la casse de la chaîne, mettant en majuscule
+les lettres minuscules, et vice-versa.</li>
+<li>Écrire un programme qui trie les caractères de la chaîne dans l'ordre
+alphabétique, sans tenir compte de la casse. Seuls les caractères
+alphabétiques seront triés. Tous les autres caractères délimitent les
+mots de la chaîne à trier. Par exemple, la chaîne &quot;baba au rhum&quot; triée
+donnera &quot;aabb au hmru&quot;.</li>
+</ol>
+<h3 id="fonctions">Fonctions</h3>
+<ol start="14">
+<li>Écrire une fonction qui affiche sur le terminal les valeurs de deux entiers
+dans la forme suivante : <code>(x, y)</code>.</li>
+<li>Écrire une fonction qui retourne la valeur d'un entier donné en paramètre
+incrémenté de 1.</li>
+<li>Écrire une fonction qui donne la parité d'un entier.</li>
+<li>Écrire une fonction qui donne le résultat d'une équation du premier degré
+de la forme <code>ax + b = 0</code>, avec <code>a</code> et <code>b</code> deux coefficients donnés</li>
+<li>Écrire une fonction donne le nombre de racines réelles à une équation du
+second degré de la forme <code>ax² + bx + c = 0</code> avec <code>a</code>, <code>b</code> et <code>c</code> trois
+coefficients donnés.</li>
+<li>Écrire une fonction qui donne la place de la première occurence du
+caractère <code>c</code> dans la chaîne de caractères <code>str</code> de taille <code>taille</code>.
+La fonction retourne <code>-1</code> si le caractère n'est pas présent.</li>
+<li>Écrire une fonction qui donne le nombre d'occurences d'un nombre <code>n</code> dans
+un tableau <code>tab</code> de taille <code>TAILLE</code>.</li>
+</ol>
+
+            
+            
+        </body>
+        </html>

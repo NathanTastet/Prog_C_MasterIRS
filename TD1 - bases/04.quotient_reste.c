@@ -8,7 +8,7 @@ int quotient_reste(int denominateur,int numerateur){
     }
     reste = denominateur;
     
-    printf("Le quotient est %d et le reste est %d",quotient,reste);
+    printf("Le quotient est %d et le reste est %d\n",quotient,reste);
     
     return 0;
     
