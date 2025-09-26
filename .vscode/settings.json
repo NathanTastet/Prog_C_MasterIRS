@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "01.C": "cpp",
-        "02.temps.C": "cpp"
+        "02.temps.C": "cpp",
+        "limits": "c"
     }
 }

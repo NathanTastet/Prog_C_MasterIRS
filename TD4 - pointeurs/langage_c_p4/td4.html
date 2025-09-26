@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Informations</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="td-4">TD 4</h1>
+<h2 id="informations">Informations</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auteur</td>
+<td>Sebastien Gougeaud</td>
+</tr>
+<tr>
+<td>Mail</td>
+<td><a href="mailto:pro.seb.gougeaud@gmail.com">pro.seb.gougeaud@gmail.com</a></td>
+</tr>
+<tr>
+<td>Version</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>17 septembre 2025</td>
+</tr>
+</tbody>
+</table>
+<h2 id="préambule">Préambule</h2>
+<p>Le but de ce TD est de se familiariser avec la syntaxe du C, et de pouvoir
+compiler quelques programmes simples, autour des pointeurs et des matrices,
+i.e. tableaux à deux dimensions.</p>
+<h2 id="exercices">Exercices</h2>
+<p>La suite d'exercices proposée permet de revoir l'ensemble des notions vues en
+cours. Elles ne seront pas toutes corrigées lors de la séance. Pour certains
+exercices, un ensemble de tests unitaires peut être fourni afin de vous
+permettre de tester les programmes.</p>
+<h3 id="pointeurs">Pointeurs</h3>
+<ol>
+<li>Écrire une fonction qui prend un pointeur sur un entier en argument,
+retourne son carré et incrémente de 1 l'entier contenu à l'adresse du
+pointeur.</li>
+<li>Définir une structure de donnée représentant un nombre complexe. Puis
+écrire une fonction qui permet de récupérer un nombre complexe sur l'entrée
+standard, et de retourner le nombre complexe ainsi que son module i.e. la
+distance qui le sépare du point origine.</li>
+<li>Écrire un programme qui alloue un tableau d'entiers d'une taille récupérée
+sur l'entrée standard et qui l'initialise selon la suite suivante :</li>
+</ol>
+<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mtable rowspacing="0.25em" columnalign="right left" columnspacing="0em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><msub><mi>t</mi><mn>0</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mn>0</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><msub><mi>t</mi><mn>1</mn></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><mn>1</mn></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="true"><msub><mi>t</mi><mi>i</mi></msub></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="true"><mrow><mrow></mrow><mo>=</mo><msub><mi>t</mi><mrow><mi>i</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>+</mo><msub><mi>t</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub><mo separator="true">,</mo><mi mathvariant="normal">∀</mi><mi>i</mi><mo>&gt;</mo><mo>=</mo><mn>2</mn></mrow></mstyle></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{split}
+t_0 &amp;= 0 \\
+t_1 &amp;= 1 \\
+t_i &amp;= t_{i-2} + t_{i-1}, \forall i &gt;= 2 \\
+\end{split}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:4.5em;vertical-align:-2em;"></span><span class="mord"><span class="mtable"><span class="col-align-r"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.5em;"><span style="top:-4.66em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.16em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-1.66em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2em;"><span></span></span></span></span></span><span class="col-align-l"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.5em;"><span style="top:-4.66em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">0</span></span></span><span style="top:-3.16em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span></span></span><span style="top:-1.66em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mbin mtight">−</span><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">∀</span><span class="mord mathnormal">i</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&gt;=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2em;"><span></span></span></span></span></span></span></span></span></span></span></span></p>
+<ol start="4">
+<li>Écrire une fonction qui réalloue un tableau d'entiers de taille <code>n</code> pour
+qu'il soit d'une taille <code>m</code>, plus grande. Le contenu du tableau doit être
+copié dans le nouveau tableau, et l'ancien tableau doit être libéré. Ceci
+sans utiliser la fonction <code>realloc()</code>.</li>
+</ol>
+<h3 id="listes-chaînées">Listes chaînées</h3>
+<ol start="5">
+<li>Écrire une structure de données représentant un élément de liste chaînée.
+Une liste chaînée est une structure utilisée pour stocker des informations,
+généralement de même type, de manière dynamique : à chaque fois qu'une
+nouvelle donnée est ajoutée, un élément de liste est alloué et ajouté à la
+chaîne. On considère que la liste va contenir des entiers.</li>
+</ol>
+<p>On considère pour les exercices 6 à 11 la structure de données définie dans
+l'exercice 6.</p>
+<ol>
+<li>Écrire deux fonctions, la première qui initialise une liste chaînée, et la
+seconde qui libère son contenu de la mémoire. On considère qu'à
+l'initialisation, il n'y a pas d'élément dans la liste.</li>
+<li>Écrire une fonction qui ajoute à une liste chaînée un entier <code>n</code>.</li>
+<li>Écrire une fonction qui affiche tous les éléments d'une liste chaînée.</li>
+<li>Écrire une fonction qui vérifie si un entier est présent dans une liste
+chaînée.</li>
+<li>Écrire une fonction qui enlève la première occurence de l'entier <code>n</code> dans
+une liste chaînée.</li>
+<li>Écrire une fonction qui trie les éléments d'une liste chaînée.</li>
+</ol>
+<h3 id="matrices">Matrices</h3>
+<p>On considère pour les exercices 12 à 18 la structure de données suivante,
+représentant une matrice i.e. un tableau à deux dimensions.</p>
+<pre><code class="language-c"><span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">matrice</span> {</span>
+    <span class="hljs-type">int</span> **valeurs;
+    <span class="hljs-type">int</span> nb_lignes;
+    <span class="hljs-type">int</span> nb_colonnes;
+};
+</code></pre>
+<ol start="12">
+<li>Écrire deux fonctions, la première qui alloue une matrice, et la seconde
+qui libère son contenu de la mémoire.</li>
+<li>Écrire une fonction qui initialise les valeurs de la matrice avec des
+nombres aléatoires contenus entre 0 et <code>n</code>, un entier donné en argument
+de la fonction.</li>
+<li>Écrire une fonction qui initialise une matrice diagonale avec un entier
+<code>n</code> donné en argument de la fonction.</li>
+<li>Écrire une fonction qui récupère la valeur minimale d'une matrice, donnant
+aussi les indices de ligne et de colonne de tous les éléments minimaux.</li>
+<li>Écrire une fonction qui applique un coefficient <code>a</code> aux éléments d'une
+matrice.</li>
+<li>Écrire une fonction qui calcule un produit matrice-vecteur.</li>
+<li>Écrire une fonction qui calcule un produit matriciel.</li>
+</ol>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>

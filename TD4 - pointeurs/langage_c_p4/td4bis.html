@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Informations</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="td-5----toujours-plus-fort">TD 5 -- Toujours plus fort</h1>
+<h2 id="informations">Informations</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auteur</td>
+<td>Sebastien Gougeaud</td>
+</tr>
+<tr>
+<td>Mail</td>
+<td><a href="mailto:pro.seb.gougeaud@gmail.com">pro.seb.gougeaud@gmail.com</a></td>
+</tr>
+<tr>
+<td>Version</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>17 septembre 2025</td>
+</tr>
+</tbody>
+</table>
+<h2 id="préambule">Préambule</h2>
+<p>L'objectif de ce TD est d'implémenter un mécanisme de classe abstraite, en
+utilisant structures de données, pointeurs et pointeurs de fonction.</p>
+<h2 id="exercices">Exercices</h2>
+<p>L'exercice proposé permet d'aller plus loin dans l'exploration du langage. Il
+n'est pas nécessaire de le traiter pour réussir l'UE, par conséquent il ne sera
+pas corrigé.</p>
+<h3 id="level-1">Level 1</h3>
+<p>Pour faire cela, il nous faut un thème. Imaginons un monde maritime, constitué
+en totalité d'états insulaires, où règneraient sur les océans trois ordres
+distincts : les pirates, les corsaires et la marine. Les affrontements entre
+ces forces sont légions, et très diverses, dépendant principalement des
+facultés de chacun. Ici, nous allons considérer que les affrontements ne se
+font qu'entre équipage. Chaque équipage est constitué d'un certain nombre de
+membres, possède un nom -comme par exemple, le très célèbre équipage de la
+casquette de foin- et est rattaché à l'un des ordres donnés ci-dessus.</p>
+<p>Pour ce premier point, nous allons donc définir la structure de données qui
+représentera un équipage, puis écrire une fonction <code>describe()</code> qui permet
+d'afficher la description de l'équipage.</p>
+<h3 id="level-2">Level 2</h3>
+<p>Commençons à construire notre première classe. Ajoutons la fonction
+<code>describe()</code> à la structure de données équipage. Pour cela, il faut ajouter le
+pointeur de fonction à la structure. Derrière, la fonction pourra être appelée
+comme suit :</p>
+<pre><code>struct crew crw;
+
+crw.describe(crw);
+</code></pre>
+<h3 id="level-3">Level 3</h3>
+<p>Commençons à créer des classes qui vont hériter de notre classe principale.
+Pour ceci, nous allons créer des structures de données spécifiques, en fonction
+de l'ordre auquel appartient l'équipage. Ainsi, un équipage pirate va également
+être représenté par le nom de son capitaine ; un équipage corsaire par un
+numéro de zone d'affectation ; un équipage de la marine par le plus haut grade
+présent.</p>
+<p>Pour éviter d'avoir à définir nos nouvelles structures de données à partir de
+rien, il est possible d'utiliser la définition de la première structure :</p>
+<pre><code>struct pirate_crew {
+    struct crew base;
+    ...
+}:
+</code></pre>
+<p>Nous pouvons ensuite écrire pour chacune de ces nouvelles structures, une
+fonction <code>describe()</code> qui lui est propre.</p>
+<h3 id="level-4">Level 4</h3>
+<p>Écrivons pour chaque nouvelle structure de données, une fonction qui va allouer
+et initialiser la structure :</p>
+<pre><code>struct pirate_crew *pirate_crew_init(const char *name, int crew_size,
+                                     const char *captain_name);
+</code></pre>
+<p>N'oublions pas d'initialiser également le champ <code>order</code> ainsi que d'attribuer
+la bonne fonction <code>describe()</code>.</p>
+<h3 id="level-5">Level 5</h3>
+<p>Maintenant, nous sommes capables d'utiliser ces classes au sein d'un programme.
+Définissons au sein d'un même tableau de pointeurs, différents équipages étant
+rattachés à des ordres différents. Nous pouvons vérifier la correcte
+implémentation en appelant la fonction <code>describe()</code> :</p>
+<pre><code>for (i = 0; i &lt; nb_crew; ++i)
+    crews[i]-&gt;describe(crews[i]);
+</code></pre>
+<h3 id="level-6">Level 6+</h3>
+<p>Dernière étape de notre aventure, il ne nous reste plus qu'à simuler une
+bataille entre deux équipages. Pour bien faire, nous aurons besoin
+d'implémenter pour chaque type d'équipage une fonction qui calcule sa puissance
+de combat en fonction de ses attributs. Par exemple, en considérant la
+puissance de base d'un équipage équivalant à sa taille, on peut appliquer
+plusieurs coefficients en fonction de l'ordre et, si il s'agit d'un équipage de
+la marine, un second coefficient dépendant du plus haut grade présent.</p>
+<p>Une fois ces fonctions de puissance implémentées, le vainqueur du combat est
+l'équipage possédant la plus grande puissance.</p>
+
+            
+            
+        </body>
+        </html>
